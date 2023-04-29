@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Olusi Wisdom Assignment</title>
@@ -419,4 +419,179 @@
   <script src="js/main.js"></script>
     
   </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+H1,H2{
+  align-items: center;
+}
+
+#time-table {
+text-align: center;
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  color: #2c2b2b;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.20);
+}
+
+#time-table thead th {
+  background-color: #444;
+  color: #fff;
+  padding: 12px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#time-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#time-table tbody td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#time-table tbody td:last-child {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  #time-table {
+    width: 100%;
+  }
+  #time-table thead {
+    display: none;
+  }
+  #time-table tbody td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+  
+
+
+</style>
+</head>
+<body>
+
+  <center> <h3>COMPUTER SCIENCE</h3> </center>
+  <center>  <h4>CSC 300LVL OFFICIAL TIME TABLE 2021/2022 SESSION</h4> </center>
+
+
+
+    <table id="time-table" border="1">
+        <tr>
+            <th colspan="11" Bgcolor="black" style="color:white;">
+                DURATIONS
+            </th>
+        </tr>
+          <tr style="background-color: rgb(252, 255, 46); color:rgb(0, 0, 0)">
+            <th style="background-color: black; color:rgb(255, 255, 255)">days</th>
+            <th>8-9</th>
+            <th>9-10</th>
+            <th>10-11</th>
+            <th>11-12</th>
+            <th>12-1</th>
+            <th>1-2</th>
+            <th>2-2:30</th>
+            <th>2:30-3:30</th>
+            <th>3:30-4:30</th>
+            <th>4:30-5:30</th>
+          </tr>
+
+          <tr Bgcolor="white">
+            <td>MON</td>
+            <td colspan="2">CSC312</td>
+            <td colspan="2">CSC316</td>
+            <td colspan="2">CSC313</td>
+            <td></td>
+            <td>CSC318</td>
+            <td>CED300</td>
+          </tr>
+
+           <tr Bgcolor="white">
+            <td>TUE</td>
+            <td colspan="2">CSC325</td>
+            <td colspan="2">CSC329</td>
+            <td>CSC314</td>
+            <td>CSC333</td>
+            <td></td>
+            <td>MTH317</td>
+            <td>CSC329</td>
+            <td>CSC311</td>
+          </tr>
+
+           <tr Bgcolor="white">
+            <td>WED</td>
+            <td colspan="2">CSC311</td>
+            <td >CSC321</td>
+            <td colspan="2">CSC318</td>
+            <td >CSC325</td>
+            <td></td>
+            <td >CSC316</td>
+            <td colspan="2">CSC333</td>
+          </tr>
+
+          <tr Bgcolor="white">
+            <td>THU</td>
+            <td colspan="2">CSC314</td>
+            <td >CSC323</td>
+            <td >CSC326</td>
+            <td ></td>
+            <td ></td>
+            <td ></td>
+            <td colspan="2">MTH317</td>
+            <td>CSC326</td>
+          </tr>
+
+
+           <tr Bgcolor="white">
+            <td>FRI</td>
+            <td >CSC312</td>
+            <td colspan="2">CSC323</td>
+            <td ></td>
+            <td >MTH317</td>
+            <td >MTH313</td>
+            <td ></td>
+            <td ></td>
+            <td ></td>
+            <td ></td>
+          </tr>
+
+
+    </table>
+<br>
+    <marquee id="marqueeText" behavior="alternate" style="overflow: hidden; white-space: nowrap;"onmouseover="pauseMarquee()" onmouseout="startMarquee()"> <b>p1 & p2 </b> - 400L & 300L CLASSES <b>F-</b> 218LT 1 <b>W-</b>500LT <b>T- </b>1000LT </marquee>  
+
+  </body>
+  <script>
+    var marquee = document.getElementById('marqueeText');
+  var speed = marquee.scrollAmount;
+
+  function pauseMarquee() {
+    marquee.stop();
+  }
+
+  function startMarquee() {
+    marquee.start();
+    marquee.scrollAmount = speed;
+  }
+  </script>
 </html>
+
+
+
+
